@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+	<head>
+    
+		<meta charset="UTF-8">
+    
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+		<title>Registrar alumno</title>
+		<link rel="stylesheet" href="css/estilo.css">
+
+	</head>
+
+
+	<body>
+    
+		<div id="bg"></div>
+   
+		<section id="barraSuperior">
+        
+			<ul class="nav-bar-list">
+            
+				<li class="nav-bar-list-large large">
+                
+					<a href="">
+<img src="img/logoo.png" class="icon-logo">Asesor&iacute;a con Val&iacute;a</a>
+            
+				</li>
+           
+				<li class="nav-bar-list-item-right">
+					<a href="tabla_alumnos.php">Regresar</a>
+				</li>
+ 
+			</ul>
+    
+		</section>
+			<div id="ini">
+        
+				<form action="registrar_usuario.php" method="post" id="crear" class="form">
+            
+					<p class="inicio">Registrar alumno</p>
+  
+					<div class="thumbnail"><img src="img/hat.svg" /></div>
+ 
+			<input type="text" name="nombre" placeholder="Nombre(s)" required>
+	       		<input type="text" name="apellidos" placeholder="Apellidos" required>
+			<input type="email" name="correo" placeholder="Correo electr&oacute;nico" required>
+			<p class="message">FECHA DE NACIMIENTO:</p>
+			<input type="date" name="fecha_nac" required>
+			<p class="message">ROL:</p>
+			<select name="rol" size="1" required>
+  				<option value="3">Estudiante</option>
+			</select><br><br>
+	       		<input type="password" name="contrasenia" placeholder="Contrase&ntilde;a" required>
+			<input type="password" name="confirmacion" placeholder="Confirmar Contrase&ntilde;a" required>
+			<button type="submit" name="enviar">Registrar alumno</button>
+   			
+        	</form>
+    	</body>
+</html>

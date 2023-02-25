@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+
+
+	<head>
+    
+		<meta charset="UTF-8">
+    
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+		<title>Registro</title>
+    
+		<link rel="stylesheet" href="css/estilo.css">
+
+	</head>
+
+
+	<body>
+    
+		<div id="bg"></div>
+    
+			<section id="barraSuperior">
+        
+				<ul class="nav-bar-list">
+            
+					<li class="nav-bar-list-large large">
+                
+						<a href="index.html">
+                    
+						<img src="img/logoo.png" class="icon-logo">Asesoría con Valía</a>
+            
+					</li>
+        
+				</ul>
+    
+			</section>
+    
+			<div id="ini">
+        
+				<form action="registrar.php" method="post" id="crear" class="form">
+            
+					<p class="inicio">Crear Usuario</p>
+            
+					<div class="thumbnail"><img src="img/hat.svg" /></div>
+            
+					<input type="text" name="nombre" placeholder="Nombre" required/>
+            
+					<input type="text" name="apellidos" placeholder="Apellidos" required/>
+  
+					<input type="email" name="correo" placeholder="Correo electrónico" required/>   
+					<p  class="message">FECHA DE NACIMIENTO:</p>
+					<input type="date" name="fecha_nac" required/>        
+					<p class="message">ROL:</p>
+					<select name="rol" required>
+  						<option value="3">Estudiante</option>
+					</select><br><br>    
+					<input type="password" name="contrasenia" placeholder="Contraseña" required/>
+            
+					<input type="password" name="confirmacion" placeholder="Confirmar Contraseña" required/>
+ 
+					<button type="submit" name="enviar">Registrarse</button>
+            
+					<p class="message">¿Ya estás registrado? <a href="inicio_sesion.html">Inicia Sesi&oacute;n</a></p>
+        
+				</form>
+    
+			</div>
+	
+</body>
+
+
+</html>
